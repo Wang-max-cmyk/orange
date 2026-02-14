@@ -1,0 +1,1090 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>橙子天天开心！</title>
+  <link rel="icon" href="photos/favicon.png" type="image/png">
+  <meta name="description" content="一个专属于我们的浪漫空间">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Ma+Shan+Zheng&family=ZCOOL+XiaoWei&family=Noto+Serif+SC:wght@400;600;700&family=Dancing+Script:wght@400;700&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <!-- Swiper CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+
+  <!-- AOS (Animate On Scroll) -->
+  <link rel="stylesheet" href="lib/aos.css">
+
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ===================== -->
+  <!-- SECTION: FLOWER INTRO -->
+  <!-- ===================== -->
+  <div id="intro-screen">
+    <div class="intro-bg-particles" id="intro-particles"></div>
+    <div class="flower-container">
+      <!-- CSS 3D Rose -->
+      <div class="rose-wrapper">
+        <div class="rose">
+          <div class="petal petal-1"></div>
+          <div class="petal petal-2"></div>
+          <div class="petal petal-3"></div>
+          <div class="petal petal-4"></div>
+          <div class="petal petal-5"></div>
+          <div class="petal petal-6"></div>
+          <div class="petal petal-7"></div>
+          <div class="petal petal-8"></div>
+          <div class="petal petal-9"></div>
+          <div class="petal petal-10"></div>
+          <div class="petal petal-11"></div>
+          <div class="petal petal-12"></div>
+          <div class="petal-center"></div>
+        </div>
+        <div class="stem">
+          <div class="stem-line"></div>
+          <div class="leaf leaf-left"></div>
+          <div class="leaf leaf-right"></div>
+        </div>
+      </div>
+    </div>
+    <div class="intro-text">
+      <h1 class="intro-title">致我最爱的橙子</h1>
+      <p class="intro-subtitle">每一朵花开，都是因为想你</p>
+      <button class="enter-btn" id="enter-btn">
+        <span>走进我们的故事</span>
+        <i class="fas fa-heart"></i>
+      </button>
+    </div>
+  </div>
+
+  <!-- ===================== -->
+  <!-- MAIN SITE             -->
+  <!-- ===================== -->
+  <div id="main-site" class="hidden">
+
+    <!-- Floating Hearts Background -->
+    <div class="floating-hearts" id="floating-hearts"></div>
+
+    <!-- Navigation -->
+    <nav class="main-nav" id="main-nav">
+      <div class="nav-inner">
+        <a href="#hero" class="nav-logo">
+          <i class="fas fa-heart"></i>
+          <span>Our Story</span>
+        </a>
+        <button class="nav-toggle" id="nav-toggle" aria-label="Toggle menu">
+          <span></span><span></span><span></span>
+        </button>
+        <ul class="nav-links" id="nav-links">
+          <li><a href="#hero">首页</a></li>
+          <li><a href="#countdown">爱的计时</a></li>
+          <li><a href="#timeline">时光轴</a></li>
+          <li><a href="#her-world">你的世界</a></li>
+          <li><a href="#our-words">我们的话</a></li>
+          <li><a href="#love-letter">情书</a></li>
+          <li><a href="#photo-wall">照片墙</a></li>
+          <li><a href="#wishes">未来愿望</a></li>
+          <li><a href="#music">我们的歌</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- ========== HERO SECTION ========== -->
+    <section id="hero" class="section hero-section">
+      <div class="hero-bg-animation"></div>
+      <div class="hero-content">
+        <div class="hero-names" data-aos="fade-up" data-aos-duration="1200">
+          <span class="hero-name his-name">王比乐</span>
+          <span class="hero-ampersand">
+            <i class="fas fa-heart heartbeat"></i>
+          </span>
+          <span class="hero-name her-name">吴诗呈</span>
+        </div>
+        <div class="hero-date" data-aos="fade-up" data-aos-delay="300" data-aos-duration="1200">
+          <p>2025.09.14 - 永远</p>
+        </div>
+        <div class="hero-typed-wrapper" data-aos="fade-up" data-aos-delay="600">
+          <span id="typed-text"></span>
+        </div>
+        <div class="scroll-indicator" data-aos="fade-up" data-aos-delay="900">
+          <div class="mouse">
+            <div class="mouse-wheel"></div>
+          </div>
+          <p>向下滑动</p>
+        </div>
+      </div>
+      <!-- Hero couple photo placeholder -->
+      <div class="hero-photo-frame" data-aos="zoom-in" data-aos-delay="400">
+        <!-- 📷 替换: 放一张你们的合照 -->
+        <img src="photos/couple-main.jpg" alt="我们的合照" class="hero-photo" onerror="this.style.display='none';this.parentElement.classList.add('placeholder')">
+        <div class="photo-frame-decoration"></div>
+      </div>
+    </section>
+
+    <!-- ========== COUNTDOWN SECTION ========== -->
+    <section id="countdown" class="section countdown-section">
+      <div class="section-header" data-aos="fade-up">
+        <h2 class="section-title">爱的计时</h2>
+        <p class="section-subtitle">每一秒都因你而珍贵</p>
+        <div class="title-decoration"><span></span><i class="fas fa-heart"></i><span></span></div>
+      </div>
+      <div class="countdown-display" data-aos="zoom-in" data-aos-duration="1000">
+        <div class="countdown-item">
+          <div class="countdown-number" id="count-days">0</div>
+          <div class="countdown-label">天</div>
+        </div>
+        <div class="countdown-separator">:</div>
+        <div class="countdown-item">
+          <div class="countdown-number" id="count-hours">0</div>
+          <div class="countdown-label">时</div>
+        </div>
+        <div class="countdown-separator">:</div>
+        <div class="countdown-item">
+          <div class="countdown-number" id="count-minutes">0</div>
+          <div class="countdown-label">分</div>
+        </div>
+        <div class="countdown-separator">:</div>
+        <div class="countdown-item">
+          <div class="countdown-number" id="count-seconds">0</div>
+          <div class="countdown-label">秒</div>
+        </div>
+      </div>
+      <div class="love-stats" data-aos="fade-up" data-aos-delay="300">
+        <div class="stat-item">
+          <i class="fas fa-utensils"></i>
+          <span class="stat-number" data-target="450">0</span>
+          <span class="stat-text">大约一起吃了这么多顿饭</span>
+        </div>
+        <div class="stat-item">
+          <i class="fas fa-comment-dots"></i>
+          <span class="stat-number" data-target="52">0</span>
+          <span class="stat-text">大约说了这么多句"我爱你"</span>
+        </div>
+        <div class="stat-item">
+          <i class="fas fa-moon"></i>
+          <span class="stat-number" data-target="153">0</span>
+          <span class="stat-text">一起度过的夜晚</span>
+        </div>
+        <div class="stat-item">
+          <i class="fas fa-camera"></i>
+          <span class="stat-number" data-target="520">0</span>
+          <span class="stat-text">一起拍了这么多张照片</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== TIMELINE SECTION ========== -->
+    <section id="timeline" class="section timeline-section">
+      <div class="section-header" data-aos="fade-up">
+        <h2 class="section-title">我们的时光轴</h2>
+        <p class="section-subtitle">每个14号，都是属于我们的情人节</p>
+        <div class="title-decoration"><span></span><i class="fas fa-heart"></i><span></span></div>
+      </div>
+      <div class="timeline-container">
+        <div class="timeline-line"></div>
+
+        <!-- September 14, 2025 -->
+        <div class="timeline-item left" data-aos="fade-right" data-aos-duration="800">
+          <div class="timeline-dot special"><i class="fas fa-camera-retro"></i></div>
+          <div class="timeline-card special-card" data-valentine="sept">
+            <div class="timeline-card-header">
+              <span class="timeline-date">2025.09.14</span>
+              <span class="timeline-badge first-day">在一起的第一天</span>
+            </div>
+            <h3 class="timeline-title">相片情人节</h3>
+            <p class="timeline-desc">这一天，我们正式在一起。从此，我的世界多了一个你。每一张照片，都记录着我们最初的心动。</p>
+            <div class="timeline-photos-preview">
+              <!-- 📷 替换: 放2-3张9月14日的照片 -->
+              <img src="photos/timeline/sept-1.jpg" alt="相片情人节" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 200 200%22%3E%3Crect fill=%22%23f8e8ee%22 width=%22200%22 height=%22200%22/%3E%3Ctext x=%2250%25%22 y=%2250%25%22 text-anchor=%22middle%22 dy=%22.3em%22 fill=%22%23c44569%22 font-size=%2214%22%3E%E7%85%A7%E7%89%871%3C/text%3E%3C/svg%3E'">
+              <img src="photos/timeline/sept-2.jpg" alt="相片情人节" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 200 200%22%3E%3Crect fill=%22%23f8e8ee%22 width=%22200%22 height=%22200%22/%3E%3Ctext x=%2250%25%22 y=%2250%25%22 text-anchor=%22middle%22 dy=%22.3em%22 fill=%22%23c44569%22 font-size=%2214%22%3E%E7%85%A7%E7%89%872%3C/text%3E%3C/svg%3E'">
+              <img src="photos/timeline/sept-3.jpg" alt="相片情人节" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 200 200%22%3E%3Crect fill=%22%23f8e8ee%22 width=%22200%22 height=%22200%22/%3E%3Ctext x=%2250%25%22 y=%2250%25%22 text-anchor=%22middle%22 dy=%22.3em%22 fill=%22%23c44569%22 font-size=%2214%22%3E%E7%85%A7%E7%89%873%3C/text%3E%3C/svg%3E'">
+            </div>
+            <button class="timeline-btn" onclick="openGallery('sept')">
+              <i class="fas fa-images"></i> 查看照片
+            </button>
+          </div>
+        </div>
+
+        <!-- October 14, 2025 -->
+        <div class="timeline-item right" data-aos="fade-left" data-aos-duration="800" data-aos-delay="100">
+          <div class="timeline-dot"><i class="fas fa-wine-glass-alt"></i></div>
+          <div class="timeline-card" data-valentine="oct">
+            <div class="timeline-card-header">
+              <span class="timeline-date">2025.10.14</span>
+              <span class="timeline-badge">第一个月</span>
+            </div>
+            <h3 class="timeline-title">葡萄酒情人节</h3>
+            <p class="timeline-desc">在一起的第一个月，我们一起品尝了爱情的醇香。就像一瓶好酒，越久越浓。</p>
+            <div class="timeline-photos-preview">
+              <!-- 📷 替换: 放2-3张10月14日的照片 -->
+              <img src="photos/timeline/oct-1.jpg" alt="葡萄酒情人节" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 200 200%22%3E%3Crect fill=%22%23f8e8ee%22 width=%22200%22 height=%22200%22/%3E%3Ctext x=%2250%25%22 y=%2250%25%22 text-anchor=%22middle%22 dy=%22.3em%22 fill=%22%23c44569%22 font-size=%2214%22%3E%E7%85%A7%E7%89%871%3C/text%3E%3C/svg%3E'">
+              <img src="photos/timeline/oct-2.jpg" alt="葡萄酒情人节" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 200 200%22%3E%3Crect fill=%22%23f8e8ee%22 width=%22200%22 height=%22200%22/%3E%3Ctext x=%2250%25%22 y=%2250%25%22 text-anchor=%22middle%22 dy=%22.3em%22 fill=%22%23c44569%22 font-size=%2214%22%3E%E7%85%A7%E7%89%872%3C/text%3E%3C/svg%3E'">
+              <img src="photos/timeline/oct-3.jpg" alt="葡萄酒情人节" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 200 200%22%3E%3Crect fill=%22%23f8e8ee%22 width=%22200%22 height=%22200%22/%3E%3Ctext x=%2250%25%22 y=%2250%25%22 text-anchor=%22middle%22 dy=%22.3em%22 fill=%22%23c44569%22 font-size=%2214%22%3E%E7%85%A7%E7%89%873%3C/text%3E%3C/svg%3E'">
+            </div>
+            <button class="timeline-btn" onclick="openGallery('oct')">
+              <i class="fas fa-images"></i> 查看照片
+            </button>
+          </div>
+        </div>
+
+        <!-- November 14, 2025 -->
+        <div class="timeline-item left" data-aos="fade-right" data-aos-duration="800" data-aos-delay="200">
+          <div class="timeline-dot"><i class="fas fa-film"></i></div>
+          <div class="timeline-card" data-valentine="nov">
+            <div class="timeline-card-header">
+              <span class="timeline-date">2025.11.14</span>
+              <span class="timeline-badge">第二个月</span>
+            </div>
+            <h3 class="timeline-title">电影情人节</h3>
+            <p class="timeline-desc">我们一起看电影的日子，有你依偎在我身边，任何电影都变成了最浪漫的故事。</p>
+            <div class="timeline-photos-preview">
+              <!-- 📷 替换: 放2-3张11月14日的照片 -->
+              <img src="photos/timeline/nov-1.jpg" alt="电影情人节" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 200 200%22%3E%3Crect fill=%22%23f8e8ee%22 width=%22200%22 height=%22200%22/%3E%3Ctext x=%2250%25%22 y=%2250%25%22 text-anchor=%22middle%22 dy=%22.3em%22 fill=%22%23c44569%22 font-size=%2214%22%3E%E7%85%A7%E7%89%871%3C/text%3E%3C/svg%3E'">
+              <img src="photos/timeline/nov-2.jpg" alt="电影情人节" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 200 200%22%3E%3Crect fill=%22%23f8e8ee%22 width=%22200%22 height=%22200%22/%3E%3Ctext x=%2250%25%22 y=%2250%25%22 text-anchor=%22middle%22 dy=%22.3em%22 fill=%22%23c44569%22 font-size=%2214%22%3E%E7%85%A7%E7%89%872%3C/text%3E%3C/svg%3E'">
+              <img src="photos/timeline/nov-3.jpg" alt="电影情人节" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 200 200%22%3E%3Crect fill=%22%23f8e8ee%22 width=%22200%22 height=%22200%22/%3E%3Ctext x=%2250%25%22 y=%2250%25%22 text-anchor=%22middle%22 dy=%22.3em%22 fill=%22%23c44569%22 font-size=%2214%22%3E%E7%85%A7%E7%89%873%3C/text%3E%3C/svg%3E'">
+            </div>
+            <button class="timeline-btn" onclick="openGallery('nov')">
+              <i class="fas fa-images"></i> 查看照片
+            </button>
+          </div>
+        </div>
+
+        <!-- December 14, 2025 -->
+        <div class="timeline-item right" data-aos="fade-left" data-aos-duration="800" data-aos-delay="300">
+          <div class="timeline-dot"><i class="fas fa-hand-holding-heart"></i></div>
+          <div class="timeline-card" data-valentine="dec">
+            <div class="timeline-card-header">
+              <span class="timeline-date">2025.12.14</span>
+              <span class="timeline-badge">第三个月</span>
+            </div>
+            <h3 class="timeline-title">拥抱情人节</h3>
+            <p class="timeline-desc">寒冷的冬天，你的拥抱是世界上最温暖的港湾。每一次拥抱，都让我感到无比幸福。</p>
+            <div class="timeline-photos-preview">
+              <!-- 📷 替换: 放2-3张12月14日的照片 -->
+              <img src="photos/timeline/dec-1.jpg" alt="拥抱情人节" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 200 200%22%3E%3Crect fill=%22%23f8e8ee%22 width=%22200%22 height=%22200%22/%3E%3Ctext x=%2250%25%22 y=%2250%25%22 text-anchor=%22middle%22 dy=%22.3em%22 fill=%22%23c44569%22 font-size=%2214%22%3E%E7%85%A7%E7%89%871%3C/text%3E%3C/svg%3E'">
+              <img src="photos/timeline/dec-2.jpg" alt="拥抱情人节" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 200 200%22%3E%3Crect fill=%22%23f8e8ee%22 width=%22200%22 height=%22200%22/%3E%3Ctext x=%2250%25%22 y=%2250%25%22 text-anchor=%22middle%22 dy=%22.3em%22 fill=%22%23c44569%22 font-size=%2214%22%3E%E7%85%A7%E7%89%872%3C/text%3E%3C/svg%3E'">
+              <img src="photos/timeline/dec-3.jpg" alt="拥抱情人节" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 200 200%22%3E%3Crect fill=%22%23f8e8ee%22 width=%22200%22 height=%22200%22/%3E%3Ctext x=%2250%25%22 y=%2250%25%22 text-anchor=%22middle%22 dy=%22.3em%22 fill=%22%23c44569%22 font-size=%2214%22%3E%E7%85%A7%E7%89%873%3C/text%3E%3C/svg%3E'">
+            </div>
+            <button class="timeline-btn" onclick="openGallery('dec')">
+              <i class="fas fa-images"></i> 查看照片
+            </button>
+          </div>
+        </div>
+
+        <!-- December 29, 2025 - Her Birthday -->
+        <div class="timeline-item left" data-aos="fade-right" data-aos-duration="800" data-aos-delay="350">
+          <div class="timeline-dot special"><i class="fas fa-birthday-cake"></i></div>
+          <div class="timeline-card special-card" data-valentine="birthday">
+            <div class="timeline-card-header">
+              <span class="timeline-date">2025.12.29</span>
+              <span class="timeline-badge today-badge">你的生日</span>
+            </div>
+            <h3 class="timeline-title">你的生日</h3>
+            <p class="timeline-desc">这是我们在一起后的第一个生日，小宝宝橙子，生日快乐！愿你永远被爱包围，愿你的每一个愿望都能实现。</p>
+            <div class="timeline-photos-preview">
+              <img src="photos/timeline/birthday-1.jpg" alt="生日快乐" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 200 200%22%3E%3Crect fill=%22%23f8e8ee%22 width=%22200%22 height=%22200%22/%3E%3Ctext x=%2250%25%22 y=%2250%25%22 text-anchor=%22middle%22 dy=%22.3em%22 fill=%22%23c44569%22 font-size=%2214%22%3E%E7%85%A7%E7%89%871%3C/text%3E%3C/svg%3E'">
+              <img src="photos/timeline/birthday-2.jpg" alt="生日快乐" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 200 200%22%3E%3Crect fill=%22%23f8e8ee%22 width=%22200%22 height=%22200%22/%3E%3Ctext x=%2250%25%22 y=%2250%25%22 text-anchor=%22middle%22 dy=%22.3em%22 fill=%22%23c44569%22 font-size=%2214%22%3E%E7%85%A7%E7%89%872%3C/text%3E%3C/svg%3E'">
+              <img src="photos/timeline/birthday-3.jpg" alt="生日快乐" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 200 200%22%3E%3Crect fill=%22%23f8e8ee%22 width=%22200%22 height=%22200%22/%3E%3Ctext x=%2250%25%22 y=%2250%25%22 text-anchor=%22middle%22 dy=%22.3em%22 fill=%22%23c44569%22 font-size=%2214%22%3E%E7%85%A7%E7%89%873%3C/text%3E%3C/svg%3E'">
+            </div>
+            <button class="timeline-btn" onclick="openGallery('birthday')">
+              <i class="fas fa-images"></i> 查看照片
+            </button>
+          </div>
+        </div>
+
+        <!-- January 14, 2026 -->
+        <div class="timeline-item right" data-aos="fade-left" data-aos-duration="800" data-aos-delay="400">
+          <div class="timeline-dot"><i class="fas fa-book-open"></i></div>
+          <div class="timeline-card" data-valentine="jan">
+            <div class="timeline-card-header">
+              <span class="timeline-date">2026.01.14</span>
+              <span class="timeline-badge">第四个月</span>
+            </div>
+            <h3 class="timeline-title">日记情人节</h3>
+            <p class="timeline-desc">把每一天的甜蜜都记录下来，翻开回忆，满满都是关于你的美好。</p>
+            <div class="timeline-photos-preview">
+              <!-- 📷 替换: 放2-3张1月14日的照片 -->
+              <img src="photos/timeline/jan-1.jpg" alt="日记情人节" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 200 200%22%3E%3Crect fill=%22%23f8e8ee%22 width=%22200%22 height=%22200%22/%3E%3Ctext x=%2250%25%22 y=%2250%25%22 text-anchor=%22middle%22 dy=%22.3em%22 fill=%22%23c44569%22 font-size=%2214%22%3E%E7%85%A7%E7%89%871%3C/text%3E%3C/svg%3E'">
+              <img src="photos/timeline/jan-2.jpg" alt="日记情人节" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 200 200%22%3E%3Crect fill=%22%23f8e8ee%22 width=%22200%22 height=%22200%22/%3E%3Ctext x=%2250%25%22 y=%2250%25%22 text-anchor=%22middle%22 dy=%22.3em%22 fill=%22%23c44569%22 font-size=%2214%22%3E%E7%85%A7%E7%89%872%3C/text%3E%3C/svg%3E'">
+              <img src="photos/timeline/jan-3.jpg" alt="日记情人节" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 200 200%22%3E%3Crect fill=%22%23f8e8ee%22 width=%22200%22 height=%22200%22/%3E%3Ctext x=%2250%25%22 y=%2250%25%22 text-anchor=%22middle%22 dy=%22.3em%22 fill=%22%23c44569%22 font-size=%2214%22%3E%E7%85%A7%E7%89%873%3C/text%3E%3C/svg%3E'">
+            </div>
+            <button class="timeline-btn" onclick="openGallery('jan')">
+              <i class="fas fa-images"></i> 查看照片
+            </button>
+          </div>
+        </div>
+
+        <!-- February 14, 2026 -->
+        <div class="timeline-item left" data-aos="fade-right" data-aos-duration="800" data-aos-delay="500">
+          <div class="timeline-dot special"><i class="fas fa-heart"></i></div>
+          <div class="timeline-card special-card" data-valentine="feb">
+            <div class="timeline-card-header">
+              <span class="timeline-date">2026.02.14</span>
+              <span class="timeline-badge today-badge">今天!</span>
+            </div>
+            <h3 class="timeline-title">传统情人节</h3>
+            <p class="timeline-desc">没有橙子的情人节，是一个悲伤的情人节，毫无意义，就像人生一样。今天也有心想是橙哦，橙子天天开心！</p>
+            <div class="timeline-photos-preview">
+              <!-- 📷 替换: 放2-3张2月14日的照片 -->
+              <img src="photos/timeline/feb-1.jpg" alt="传统情人节" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 200 200%22%3E%3Crect fill=%22%23f8e8ee%22 width=%22200%22 height=%22200%22/%3E%3Ctext x=%2250%25%22 y=%2250%25%22 text-anchor=%22middle%22 dy=%22.3em%22 fill=%22%23c44569%22 font-size=%2214%22%3E%E7%85%A7%E7%89%871%3C/text%3E%3C/svg%3E'">
+              <img src="photos/timeline/feb-2.jpg" alt="传统情人节" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 200 200%22%3E%3Crect fill=%22%23f8e8ee%22 width=%22200%22 height=%22200%22/%3E%3Ctext x=%2250%25%22 y=%2250%25%22 text-anchor=%22middle%22 dy=%22.3em%22 fill=%22%23c44569%22 font-size=%2214%22%3E%E7%85%A7%E7%89%872%3C/text%3E%3C/svg%3E'">
+              <img src="photos/timeline/feb-3.jpg" alt="传统情人节" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 200 200%22%3E%3Crect fill=%22%23f8e8ee%22 width=%22200%22 height=%22200%22/%3E%3Ctext x=%2250%25%22 y=%2250%25%22 text-anchor=%22middle%22 dy=%22.3em%22 fill=%22%23c44569%22 font-size=%2214%22%3E%E7%85%A7%E7%89%873%3C/text%3E%3C/svg%3E'">
+            </div>
+            <button class="timeline-btn" onclick="openGallery('feb')">
+              <i class="fas fa-images"></i> 查看照片
+            </button>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ========== HER WORLD SECTION ========== -->
+    <section id="her-world" class="section her-world-section">
+      <div class="section-header" data-aos="fade-up">
+        <h2 class="section-title">你的世界</h2>
+        <p class="section-subtitle">你的每一个瞬间，都值得被珍藏</p>
+        <div class="title-decoration"><span></span><i class="fas fa-heart"></i><span></span></div>
+      </div>
+
+      <!-- Cards Grid -->
+      <div class="her-world-grid" id="her-world-grid">
+
+        <!-- Card 1: 之前的你 -->
+        <div class="moment-card" data-category="before" data-aos="fade-up" data-aos-delay="100">
+          <div class="moment-card-inner">
+            <div class="moment-card-image">
+              <img src="photos/her/before-cover.jpg" alt="之前的你" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 400 300%22%3E%3Crect fill=%22%23f0e0e8%22 width=%22400%22 height=%22300%22/%3E%3Ctext x=%2250%25%22 y=%2250%25%22 text-anchor=%22middle%22 dy=%22.3em%22 fill=%22%23c44569%22 font-size=%2220%22%3E%E4%B9%8B%E5%89%8D%E7%9A%84%E5%A5%B9%3C/text%3E%3C/svg%3E'">
+              <div class="moment-card-overlay">
+                <span class="moment-count"><i class="fas fa-images"></i> 多张照片</span>
+              </div>
+            </div>
+            <div class="moment-card-info">
+              <h3>之前的你</h3>
+              <p>我有点来迟啦，小宝宝</p>
+            </div>
+          </div>
+          <div class="moment-card-gallery" style="display:none">
+            <img src="photos/her/before-1.jpg" alt="之前照片1">
+            <img src="photos/her/before-2.jpg" alt="之前照片2">
+            <img src="photos/her/before-3.jpg" alt="之前照片3">
+          </div>
+        </div>
+
+        <!-- Card 2: 吃货的你 -->
+        <div class="moment-card" data-category="food" data-aos="fade-up" data-aos-delay="200">
+          <div class="moment-card-inner">
+            <div class="moment-card-image">
+              <img src="photos/her/food-cover.jpg" alt="吃货的你" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 400 300%22%3E%3Crect fill=%22%23f8f0e0%22 width=%22400%22 height=%22300%22/%3E%3Ctext x=%2250%25%22 y=%2250%25%22 text-anchor=%22middle%22 dy=%22.3em%22 fill=%22%23c49045%22 font-size=%2220%22%3E%E5%90%83%E8%B4%A7%E7%9A%84%E5%A5%B9%3C/text%3E%3C/svg%3E'">
+              <div class="moment-card-overlay">
+                <span class="moment-count"><i class="fas fa-images"></i> 多张照片</span>
+              </div>
+            </div>
+            <div class="moment-card-info">
+              <h3>吃货的你</h3>
+              <p>认真吃饭的样子最可爱</p>
+            </div>
+          </div>
+          <div class="moment-card-gallery" style="display:none">
+            <img src="photos/her/food-1.jpg" alt="美食照片1">
+            <img src="photos/her/food-2.jpg" alt="美食照片2">
+            <img src="photos/her/food-3.jpg" alt="美食照片3">
+          </div>
+        </div>
+
+        <!-- Card 3: 日常的你 -->
+        <div class="moment-card" data-category="daily" data-aos="fade-up" data-aos-delay="300">
+          <div class="moment-card-inner">
+            <div class="moment-card-image">
+              <img src="photos/her/daily-cover.jpg" alt="日常的你" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 400 300%22%3E%3Crect fill=%22%23e8f0e0%22 width=%22400%22 height=%22300%22/%3E%3Ctext x=%2250%25%22 y=%2250%25%22 text-anchor=%22middle%22 dy=%22.3em%22 fill=%22%23569044%22 font-size=%2220%22%3E%E6%97%A5%E5%B8%B8%E7%9A%84%E5%A5%B9%3C/text%3E%3C/svg%3E'">
+              <div class="moment-card-overlay">
+                <span class="moment-count"><i class="fas fa-images"></i> 多张照片</span>
+              </div>
+            </div>
+            <div class="moment-card-info">
+              <h3>日常的你</h3>
+              <p>平凡中的小美好</p>
+            </div>
+          </div>
+          <div class="moment-card-gallery" style="display:none">
+            <img src="photos/her/daily-1.jpg" alt="日常照片1">
+            <img src="photos/her/daily-2.jpg" alt="日常照片2">
+            <img src="photos/her/daily-3.jpg" alt="日常照片3">
+          </div>
+        </div>
+
+        <!-- Card 4: 旅途的你 -->
+        <div class="moment-card" data-category="travel" data-aos="fade-up" data-aos-delay="400">
+          <div class="moment-card-inner">
+            <div class="moment-card-image">
+              <img src="photos/her/travel-cover.jpg" alt="旅途的你" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 400 300%22%3E%3Crect fill=%22%23e0e8f8%22 width=%22400%22 height=%22300%22/%3E%3Ctext x=%2250%25%22 y=%2250%25%22 text-anchor=%22middle%22 dy=%22.3em%22 fill=%22%234569c4%22 font-size=%2220%22%3E%E6%97%85%E9%80%94%E7%9A%84%E5%A5%B9%3C/text%3E%3C/svg%3E'">
+              <div class="moment-card-overlay">
+                <span class="moment-count"><i class="fas fa-images"></i> 多张照片</span>
+              </div>
+            </div>
+            <div class="moment-card-info">
+              <h3>旅途的你</h3>
+              <p>世界那么大，和你一起看</p>
+            </div>
+          </div>
+          <div class="moment-card-gallery" style="display:none">
+            <img src="photos/her/travel-1.jpg" alt="旅行照片1">
+            <img src="photos/her/travel-2.jpg" alt="旅行照片2">
+            <img src="photos/her/travel-3.jpg" alt="旅行照片3">
+          </div>
+        </div>
+
+        <!-- Card 5: 可爱的你 -->
+        <div class="moment-card" data-category="cute" data-aos="fade-up" data-aos-delay="500">
+          <div class="moment-card-inner">
+            <div class="moment-card-image">
+              <img src="photos/her/cute-cover.jpg" alt="可爱的你" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 400 300%22%3E%3Crect fill=%22%23f8e0f0%22 width=%22400%22 height=%22300%22/%3E%3Ctext x=%2250%25%22 y=%2250%25%22 text-anchor=%22middle%22 dy=%22.3em%22 fill=%22%23c44590%22 font-size=%2220%22%3E%E5%8F%AF%E7%88%B1%E7%9A%84%E5%A5%B9%3C/text%3E%3C/svg%3E'">
+              <div class="moment-card-overlay">
+                <span class="moment-count"><i class="fas fa-images"></i> 多张照片</span>
+              </div>
+            </div>
+            <div class="moment-card-info">
+              <h3>可爱的你</h3>
+              <p>每一个表情都让我心动</p>
+            </div>
+          </div>
+          <div class="moment-card-gallery" style="display:none">
+            <img src="photos/her/cute-1.jpg" alt="可爱照片1">
+            <img src="photos/her/cute-2.jpg" alt="可爱照片2">
+            <img src="photos/her/cute-3.jpg" alt="可爱照片3">
+          </div>
+        </div>
+
+        <!-- Card 6: 独立的你 -->
+        <div class="moment-card" data-category="independent" data-aos="fade-up" data-aos-delay="600">
+          <div class="moment-card-inner">
+            <div class="moment-card-image">
+              <img src="photos/her/independent-cover.jpg" alt="独立的你" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 400 300%22%3E%3Crect fill=%22%23e8e0f8%22 width=%22400%22 height=%22300%22/%3E%3Ctext x=%2250%25%22 y=%2250%25%22 text-anchor=%22middle%22 dy=%22.3em%22 fill=%22%236945c4%22 font-size=%2220%22%3E%E7%8B%AC%E7%AB%8B%E7%9A%84%E5%A5%B9%3C/text%3E%3C/svg%3E'">
+              <div class="moment-card-overlay">
+                <span class="moment-count"><i class="fas fa-images"></i> 多张照片</span>
+              </div>
+            </div>
+            <div class="moment-card-info">
+              <h3>独立的你</h3>
+              <p>努力发光的样子最迷人</p>
+            </div>
+          </div>
+          <div class="moment-card-gallery" style="display:none">
+            <img src="photos/her/independent-1.jpg" alt="独立照片1">
+            <img src="photos/her/independent-2.jpg" alt="独立照片2">
+            <img src="photos/her/independent-3.jpg" alt="独立照片3">
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ========== OUR WORDS SECTION ========== -->
+    <section id="our-words" class="section our-words-section">
+      <div class="section-header" data-aos="fade-up">
+        <h2 class="section-title">我们的话</h2>
+        <p class="section-subtitle">那些说过的、想说的、藏在心里的</p>
+        <div class="title-decoration"><span></span><i class="fas fa-heart"></i><span></span></div>
+      </div>
+
+      <!-- Featured Quote -->
+      <div class="featured-quote" data-aos="zoom-in" data-aos-duration="1000">
+        <div class="quote-marks"><i class="fas fa-quote-left"></i></div>
+        <p id="featured-quote-text"></p>
+        <div class="quote-marks right"><i class="fas fa-quote-right"></i></div>
+      </div>
+
+      <!-- Chat Messages -->
+      <div class="chat-container" data-aos="fade-up" data-aos-delay="200">
+        <div class="chat-date-divider"><span>2025年2月13日</span></div>
+
+        <!-- 对方 1:08 发一条消息（超长 ~2500字，需要展开查看） -->
+        <div class="chat-message hers" data-aos="fade-left" data-aos-delay="100">
+          <div class="chat-avatar her-avatar">
+            <img src="photos/avatar-hers.jpg" alt="你" onerror="this.style.display='none';this.parentElement.innerHTML='<i class=\'fas fa-user\'></i>'">
+          </div>
+          <div class="chat-bubble">
+            <div class="chat-text-preview">
+              <p>比乐，我不知道怎么给你形容这种感觉，以前我焦虑的时候看见你很难过我很心疼，但是我自己也很难受，你没有学会怎么解决我的焦虑，我只能事后复盘的时候和你说，你要多和我说话，要和我表达自己的想法。每次这种时候就很开心，因为感觉以后会越来越好。我总是想通过离家出走，回寝室，这种方式吸引你注意力，让你来关注我解决我的焦虑，不想两个人沉默的越来越难受。所以为什么每次你在下面都是我喊你，或者下来找你想喊你到我旁边来。这种方式让你很累，其实事情说开了都不累了，但是你一直不愿意和我说你心里怎么想的。我们以前都说过，只要对方不提分手就一定不会想分手，我以前没有一次是想真的分手，我害怕离开你，我真的不知道怎么办，但是你看上去真的不想和我在一起了。你后来可能觉得自己是冲动上头了，但是我一想到我就很难受，我很怕哪里又让你不开心了，我不敢在你面前耍脾气不敢无理取闹，我不知道你怎么想的，以前你说你困了，我就说那宝宝睡觉，但是我刚刚又在你眼睛里看到你很无语的样子了。我现在依然不知道分手之后我怎么办，我很难过，我觉得我被丢开了，因为我的原因。你昨天说的很多事情我都记不清了，包括你帮李周做事这些，聊天记录没有了，但是我印象里总觉得不完全是你说的那样，我不是这样不讲道理的人，如果当时我有别的情绪影响，我希望你能理解我，也可能是我自我认知不够清晰，如果你有聊天记录也可以看看。这些其实都不重要了。重要的是好像在你眼里我已经很差劲了。好像每次我乱耍脾气都是针对当时的事情，因为以前的事我都当场把脾气耍完了。你积压了那么多怨气我也不知道[捂脸]。我记得我最开始就和你说，我脾气很差，希望你始终相信我永远不希望伤害你，你相信我是个好人就够了。但是你昨天说的我真的很伤心，感觉你一股脑把心里话全说出来了，我不信你说是乱说的，你应该不会用乱说的话来伤害我吧。
+情侣之间吵架是很正常的事，但是我们应该就事论事来解决问题。以前我总提分手是我的错，我不知道怎么样才能让你关注我在想什么，但是我从来没有认真过。我每一次都很怕玩脱了，你同意了。没想到玩脱了有延迟的副作用[笑脸]你真的要分手了。以后我们能不能多吵架，你的不满我的不满吵一架说开了就都没事了，不要害怕说，因为吵架是常态，你害怕我难过，所以我最后更难过了。以后我们都不说分手好不好。
+我不知道你能不能看出我有多难过，我昨天就想着你要分手我就死缠烂打缠着你，到遵义去找你，求你告诉你我会改。然后马上想到，我真的要这样吗，这样不好，然后又马上想到要是你不在，我之后的日子该怎么办，很难想象因为想一点点就想不下去了。我难过因为你不是想让我不哭，而是我哭了之后和我说你别哭。
+你回忆一下哈，我们在一起也挺不容易的，天时地利人和都碰上了。其实追根溯源还是你追的我嘞。我记得我很详细的和你描述过上个学期班会你上去介绍你的成果的时候，那时候我心里上蹿下跳的。我记得那时候我就几句玩笑话然后急着回寝室，你就以为我生气了，从烧烤店出来在小树林里哭，我当时真慌了，因为我是真的赶时间回寝室，然后我就打电话给唐老师，骗宿管阿姨，然后出来找你。看到你就很想抱抱，你真的像个小朋友一样，我感觉我又聪明又不聪明的，我能看出你藏在心里的自责，觉得自己总是控制不住自己耽误了正事，觉得自己这样不好配不上我等等等等，我都知道，但是我不知道怎么解决，我就只能抱着你说没事，然后和开玩笑一样让你把心里的想法说出来。
+你昨天说你难过我没哄过你这个我不认哈，只是说你的难过涉及我们之间的事的时候，我们的情绪都没能很好的解决。大家都难受。没开玩笑的说，我真的不作，作的人不会这么难受的吧，应该[叹气]
+我给你描述一下我有多喜欢你呢，一开始你给我的印象可不是这样，你给我讲的哲学太抽象，让我觉得你有点滑稽，但是我逐渐习惯了难过就找你给我分析分析，我也不知道为什么就会好很多。在我眼里当时你一定是个有趣的人。后来你给我送伞，哇，我现在回忆，我当时很期待你给我送伞，我仔细想当时应该是我希望你来害怕你不来，我以为是我太难过，有件事总会没那么难过，那现在想想，我为什么就和你说我在图书馆呢，为什么当时你非要我去吃午饭呢，你看，我不知道我为什么当时没意识到。所以后面你建议我和喜锐复合，我就真的这样做了。那个日子真难熬啊。和他在一起我脑袋里全是道理，但是和你一起道理都抛之脑后了，说起来头头是道，一个都做不到。妈妈说我们不应该期待别人改变，应该做筛选，但是我们都只是还不会谈恋爱的小孩，你说你陪我长大，但是其实你也还没有长大[吃瓜]学习不算改变[加油]
+在我的视角里，只要我说分手，你就说分什么手，那就合手。但是好像我一旦生气，你就不是这样想了。但是我从来没有真的想分过手，我和你说过的呀，我怕你难过。以后你能不能不当回事，我叫你滚你也抱抱我，之前我说我说你不撒手就分手，你怎么办，你说你就一直抱着我，我总是希望你很坚定的爱我。我总说，你不爱我了，你不喜欢我了，我就是想一遍一遍的听你说爱我。这是下意识的，我怕你走。
+所以昨天早上你真的要走了，我不知道怎么办了，一开始我觉得我一定能把你留下来，大不了就死缠烂打，但是我发现你后来越来越坚定，只不过是坚定的不要我了，这时候我发现我可能都做不到死缠烂打，我可能什么都做不到了。我知道女生可以果断抛弃渣男自己闯荡，但是我不知道能不能放弃一个这么喜欢这么好的人，我现在不行以后也不行。以前你说等我长大，我可能就长不大，我现在想想这也挺好的，人不是只有一种活法。
+我今天晚上很难过，既然睡前没有说，那早上醒来能不能和我说一声，我知道宝宝难过，但是我不会离开你的，什么都能解决的，我先睡了哦
+昨天的事情我想到就很难过，很自责，很害怕，但是昨天晚上我一直没听到我想听的话，挤牙膏一样挤出来了一点，你家橙子宝宝很难受，既然昨天没说，能不能明天真情流露一下让我不要患得患失的呀[叹气]
+不要和我斤斤计较嘛，我小心眼，你知道就好嘛，我一直都希望你好，大家改变都需要时间，说出来是第一步，改变是第二步嘛，有时候让着我一点嘛，不要突然和我说分手嘛，伤害性极强，你知道我不是很自信的。你知道我一直都希望你好的。
+我是不是有点前言不搭后语，因为我喜欢你，我离不开你，当你看清楚我在担心什么的时候我就不担心了，当你一语道破我在想什么的时候，我就不会去想了</p>
+            </div>
+            <button class="chat-expand-btn" onclick="openFullMessage(0)">
+              <i class="fas fa-expand-alt"></i> 查看全文
+            </button>
+            <span class="chat-time">1:08</span>
+          </div>
+        </div>
+
+        <!-- 对方 12:00 发一条消息 -->
+        <div class="chat-message hers" data-aos="fade-left" data-aos-delay="150">
+          <div class="chat-avatar her-avatar">
+            <img src="photos/avatar-hers.jpg" alt="你" onerror="this.style.display='none';this.parentElement.innerHTML='<i class=\'fas fa-user\'></i>'">
+          </div>
+          <div class="chat-bubble">
+            <p>为什么不说话呀，不想理我了么</p>
+            <span class="chat-time">12:00</span>
+          </div>
+        </div>
+
+        <!-- 对方 12:13 发一条消息 -->
+        <div class="chat-message hers" data-aos="fade-left" data-aos-delay="200">
+          <div class="chat-avatar her-avatar">
+            <img src="photos/avatar-hers.jpg" alt="你" onerror="this.style.display='none';this.parentElement.innerHTML='<i class=\'fas fa-user\'></i>'">
+          </div>
+          <div class="chat-bubble">
+            <p>能不能告诉我你现在是醒了还是还在睡觉呀</p>
+            <span class="chat-time">12:13</span>
+          </div>
+        </div>
+
+        <!-- 对方 12:17 发一条消息 -->
+        <div class="chat-message hers" data-aos="fade-left" data-aos-delay="250">
+          <div class="chat-avatar her-avatar">
+            <img src="photos/avatar-hers.jpg" alt="你" onerror="this.style.display='none';this.parentElement.innerHTML='<i class=\'fas fa-user\'></i>'">
+          </div>
+          <div class="chat-bubble">
+            <p>是不是不舒服呀[叹气]</p>
+            <span class="chat-time">12:17</span>
+          </div>
+        </div>
+
+        <!-- 我紧接着发3条消息（第一条超长 ~2500字，需要展开查看） -->
+        <div class="chat-message his" data-aos="fade-right" data-aos-delay="300">
+          <div class="chat-avatar his-avatar">
+            <img src="photos/avatar-his.jpg" alt="他" onerror="this.style.display='none';this.parentElement.innerHTML='<i class=\'fas fa-user\'></i>'">
+          </div>
+          <div class="chat-bubble">
+            <div class="chat-text-preview">
+              <p>宝宝，我写这些，不是想跟你吵架，不是想怪你，更不是想否定我们的感情。我是真的太喜欢你、太舍不得你，才想把藏在心里这么久、从来没敢完整说出来的话，全都认认真真告诉你。我19岁，第一次谈恋爱，我真的很想把所有事都做好，很想一直和你走下去，可有些时候，我心里真的又疼又压抑，憋得快喘不过气了。
+我一直都记得，那次你因为第二天要考计组，特别焦虑，被我惹到情绪上头才动手打了我，说实话，被打了过后我整个人都懵了，所以我才会有一些过激的行为。我知道你不是真的想伤害我，打完你立刻就后悔了，过来哄我，说心疼我，我全都信，也都能体谅你把考试看得很重，焦虑起来会控制不住情绪。可是那天，我不仅心里害怕、委屈，还因为这件事浪费了很多复习时间，最后考试成绩比你差了很多，我不是怪你考得好，我只是难过，你的情绪失控，最后却要我来承担这么多代价，那种心里空空的难受，我一直没敢跟你说。还有一件事让我很难受，就是那次你很难过把我的手机狠狠地砸在地上，我也知道是我没做好、让你焦虑了，我们以后一起慢慢控制情绪，别再做伤害彼此的过激举动好不好嘛。
+还有，我很害怕你对我说分手，分手这两个字太伤人了，我真的特别特别怕，以后别轻易挂嘴边好不好嘛。我也很害怕你总是动不动就离家出走，我真的很怕，很怕我们以后结婚过后你也是这样，有什么事情我们都可以一起解决，不要用这样的方式，我们好好沟通好不好嘛。
+我希望你能多体谅体谅我，多照顾照顾我，多从我的角度想想，比如我说我买硬卧，为了省钱，我希望你能看出，我真的不想这样，我希望你能心疼我一点，比如那次我扁桃体发炎，我回寝室休息，你说点个外卖，我们一起去图书馆吃，我希望的是你点好外卖你拿过去，但是当我睡醒过后，你叫我去拿说我顺路的，我当时真的很难受，但是还是要去拿那个外卖。我很难受的时候，我希望你把其他的东西先放一边，就比如我上次住院，不管我有没有做错，我希望你不要跟我闹，不要跟我闹分手，我当时本来身体已经很难受了，你这样和我说，我就更难过了。
+每次我一不小心惹你生气，你就会删微信、删QQ，不接电话，把所有联系都断掉，我只能靠着短信一点点找你。还有打电话的时候，只要我沉默不说话，或者表现得不好，你就会直接挂掉电话。我知道我沉默确实很让人着急，也知道你生气的时候想躲开，可每次看着被删掉的好友、被挂断的电话，我都特别恐慌，感觉自己马上就要失去你了，那种无助和害怕，真的很难熬。还有我只要稍微表现出一点不耐烦、状态不好，你就会说我不喜欢你了，这句话你总挂在嘴边，我每次听到都特别难受，我只是不知所措、只是累了，我从来没有一刻不喜欢你，可我总被这样怀疑，会忍不住一直自我怀疑。
+还有很多时候，我感觉自己一直被推着、被逼着，没有一点自由。比如我们打视频，我妈妈叫我去吃饭，我说五六十分钟，你觉得太久，我只能赶紧跟你保证40分钟一定回来，必须随时观察着时间，因为我知道只要一旦迟了，你会很生气。我知道你是想多跟我视频，怕一个人无聊，我也心疼你一个人没事做，可我也需要安安心心陪家人吃顿饭，不需要被卡死时间，这样被盯着、被限定的感觉，真的太压抑了。还有前天我跟你提分手，我只是说想冷静一下，好好审视我们的感情，不是真的想离开，可你一直逼我立刻给答案，问我是不是很难下结论。我知道你是怕我走，怕失去我，可我真的需要一点时间慢慢想，被这样逼着做决定，我心里特别慌，也特别累。
+还有一些话，我憋了很久，怕说出来你生气，可我真的很难过。比如我们聊到彩礼，我跟你说我的难处，我知道这件事本该是我多承担，不该让你操心，你也从来没真的把这个事放心上，不会真的为难我，可你每次都直接跟我说“这是你的事，我不管”。我要的从来不是你帮我解决问题，只是想要你一句安慰，想让你站在我这边，跟我说一句“我知道你很难”，可你这种事不关己的态度，真的会让我觉得，我最难的时候，只有我一个人。还有花钱和礼物的事，我一直觉得男生多承担一点是应该的，我也心甘情愿为你付出，可慢慢的我付出得有点过头了，我不好意思跟你开口要什么，你偶尔也会主动，只是不多。我们在一起五个多月，你从来没有认真给我送过一次礼物，我真的不在乎东西贵不贵，我只是想偶尔感受到，你心里也惦记着我，也想给我一点小心意，这份小小的期待，我一直没敢说。
+我也希望你不要冷暴力我，有什么我们说出来好不好嘛，上次你一天我一直好好和你说话，你都没有理我，我可难过了。我知道你很难受，很难过，但这个时候你不要冷暴力我，好不好嘛。
+当我说我什么心情不好的时候，你好好哄哄我，好不好嘛。比如我说我现在掉头发掉很多，很焦虑，希望你能好好哄哄我。
+还有就是我希望你多从我的角度想想，不要开些不恰当的玩笑，我成绩掉下来很多，我已经很难过了，你还开玩笑说之前我还担心我们研究生去不了一样的学校，但是现在看来不去一样的学校是不行了。我听了可难过了，不是说不想和你去一样的学校，我只是说想我们一起变好，不是说我变差，你变好。
+我现在越来越不敢跟你说话，总是怕说错一句话，你就会大发雷霆。所以很多心事、很多想法我都藏在心里，不敢告诉你，你也因此总觉得不了解我，很多事情你就算做错了没意识到，也有我不坦诚的问题，我知道这是我的错。可我真的不是不想说，是我太怕了，怕我说错话，怕你生气，怕你又删掉我，怕你说我不喜欢你，我只能把所有话都咽回去，越憋越难受。
+我也一直都特别心疼你。我知道你不怎么玩游戏，没有我陪你，你一个人会特别无聊，连科研很多事情都做不下去，我每次想到你孤零零的样子，我都舍不得让你一个人，所以我总想多陪你、多顺着你。你和妈妈聊天、出门的时候，我从来都不会打扰你，我知道每个人都需要自己的空间，我也一直都在学着尊重你。我懂你的所有不安、依赖和没有安全感，也懂你很多时候只是嘴硬，心里其实很在乎我，这些我全都知道，也全都心疼。
+你总说我们的关系不对等，也许就是因为这样，我希望能改变这些。
+我真的很努力在做好一个男朋友，我木讷、不会说话、很多事情都做不完美，可我把所有的真心和耐心都给了你。我不想跟你分开，我舍不得你，也心疼你的孤单和脆弱，可我也不想再一直这样压抑、害怕、小心翼翼地谈恋爱。我想要的从来不多，只是希望我们能互相心疼、互相尊重：你生气的时候别再删掉我、别再逼我、别再用话伤我；我难过的时候，你能稍微安慰我一句；我需要一点空间的时候，你能稍微等我一下；我也会努力改掉沉默、不坦诚的毛病，把所有心里话都慢慢告诉你。
+我写这么多，不是想怪你，是因为我太在乎我们的感情了。我知道你有你的情绪、你的焦虑、你的不安，我都愿意包容，可我也希望你能看见我的委屈、我的害怕、我的压抑。我们都不是完美的人，可我想和你一起慢慢改，慢慢变成彼此都舒服、都安心的样子。
+我真的很喜欢你，也真的想和你好好走下去，你能抱抱我吗？</p>
+            </div>
+            <button class="chat-expand-btn" onclick="openFullMessage(1)">
+              <i class="fas fa-expand-alt"></i> 查看全文
+            </button>
+            <span class="chat-time">12:17</span>
+          </div>
+        </div>
+
+        <div class="chat-message his" data-aos="fade-right" data-aos-delay="350">
+          <div class="chat-avatar his-avatar">
+            <img src="photos/avatar-his.jpg" alt="他" onerror="this.style.display='none';this.parentElement.innerHTML='<i class=\'fas fa-user\'></i>'">
+          </div>
+          <div class="chat-bubble">
+            <p>没有呀宝宝，才醒一会</p>
+            <span class="chat-time">12:17</span>
+          </div>
+        </div>
+
+        <div class="chat-message his" data-aos="fade-right" data-aos-delay="400">
+          <div class="chat-avatar his-avatar">
+            <img src="photos/avatar-his.jpg" alt="他" onerror="this.style.display='none';this.parentElement.innerHTML='<i class=\'fas fa-user\'></i>'">
+          </div>
+          <div class="chat-bubble">
+            <p>有点感冒了，扁桃体也难受，属于是情侣款了</p>
+            <span class="chat-time">12:17</span>
+          </div>
+        </div>
+
+        <!-- 12:25 对方发3条消息 -->
+        <div class="chat-message hers" data-aos="fade-left" data-aos-delay="450">
+          <div class="chat-avatar her-avatar">
+            <img src="photos/avatar-hers.jpg" alt="你" onerror="this.style.display='none';this.parentElement.innerHTML='<i class=\'fas fa-user\'></i>'">
+          </div>
+          <div class="chat-bubble">
+            <p>注意休息</p>
+            <span class="chat-time">12:25</span>
+          </div>
+        </div>
+
+        <div class="chat-message hers" data-aos="fade-left" data-aos-delay="500">
+          <div class="chat-avatar her-avatar">
+            <img src="photos/avatar-hers.jpg" alt="你" onerror="this.style.display='none';this.parentElement.innerHTML='<i class=\'fas fa-user\'></i>'">
+          </div>
+          <div class="chat-bubble">
+            <p>抱抱比乐</p>
+            <span class="chat-time">12:25</span>
+          </div>
+        </div>
+
+        <div class="chat-message hers" data-aos="fade-left" data-aos-delay="550">
+          <div class="chat-avatar her-avatar">
+            <img src="photos/avatar-hers.jpg" alt="你" onerror="this.style.display='none';this.parentElement.innerHTML='<i class=\'fas fa-user\'></i>'">
+          </div>
+          <div class="chat-bubble">
+            <p>多喝点热水吧</p>
+            <span class="chat-time">12:25</span>
+          </div>
+        </div>
+
+        <!-- 我发2条 -->
+        <div class="chat-message his" data-aos="fade-right" data-aos-delay="600">
+          <div class="chat-avatar his-avatar">
+            <img src="photos/avatar-his.jpg" alt="他" onerror="this.style.display='none';this.parentElement.innerHTML='<i class=\'fas fa-user\'></i>'">
+          </div>
+          <div class="chat-bubble">
+            <p>嗯，我会好好休息的🥺 有你这个抱抱，我就没那么难受了。
+说的这些话，我不是要怪你，就是真的太想让你懂我了。
+现在有你在，我就没那么怕了，我们慢慢来，好不好？</p>
+            <span class="chat-time">12:25</span>
+          </div>
+        </div>
+
+        <div class="chat-message his" data-aos="fade-right" data-aos-delay="650">
+          <div class="chat-avatar his-avatar">
+            <img src="photos/avatar-his.jpg" alt="他" onerror="this.style.display='none';this.parentElement.innerHTML='<i class=\'fas fa-user\'></i>'">
+          </div>
+          <div class="chat-bubble">
+            <p>抱抱橙子</p>
+            <span class="chat-time">12:25</span>
+          </div>
+        </div>
+
+        <!-- 对方又发一条 -->
+        <div class="chat-message hers" data-aos="fade-left" data-aos-delay="700">
+          <div class="chat-avatar her-avatar">
+            <img src="photos/avatar-hers.jpg" alt="你" onerror="this.style.display='none';this.parentElement.innerHTML='<i class=\'fas fa-user\'></i>'">
+          </div>
+          <div class="chat-bubble">
+            <p>我们慢慢来</p>
+            <span class="chat-time">12:25</span>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- 长消息全文阅读弹窗 -->
+      <div class="full-message-modal" id="full-message-modal">
+        <div class="full-message-overlay" onclick="closeFullMessage()"></div>
+        <div class="full-message-content">
+          <div class="full-message-header">
+            <div class="full-message-header-left">
+              <div class="full-message-avatar" id="full-message-avatar"></div>
+              <div class="full-message-info">
+                <span class="full-message-name" id="full-message-name"></span>
+                <span class="full-message-time" id="full-message-time"></span>
+              </div>
+            </div>
+            <button class="full-message-close" onclick="closeFullMessage()">
+              <i class="fas fa-times"></i>
+            </button>
+          </div>
+          <div class="full-message-body" id="full-message-body"></div>
+          <div class="full-message-footer">
+            <div class="full-message-decoration">
+              <i class="fas fa-heart"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Sweet words cards -->
+      <div class="sweet-words-grid" data-aos="fade-up" data-aos-delay="300">
+        <div class="sweet-card" data-aos="flip-left">
+          <div class="sweet-card-front">
+            <i class="fas fa-heart"></i>
+            <p>我说</p>
+          </div>
+          <div class="sweet-card-back">
+            <p>"我给你一个我的承诺"</p>
+          </div>
+        </div>
+        <div class="sweet-card" data-aos="flip-left" data-aos-delay="100">
+          <div class="sweet-card-front">
+            <i class="fas fa-star"></i>
+            <p>你说</p>
+          </div>
+          <div class="sweet-card-back">
+            <p>"有你我没那么害怕后果了"</p>
+          </div>
+        </div>
+        <div class="sweet-card" data-aos="flip-left" data-aos-delay="200">
+          <div class="sweet-card-front">
+            <i class="fas fa-moon"></i>
+            <p>我说</p>
+          </div>
+          <div class="sweet-card-back">
+            <p>"不用害怕，万事有我在，一切安好"</p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ========== LOVE LETTER SECTION ========== -->
+    <section id="love-letter" class="section love-letter-section">
+      <div class="section-header" data-aos="fade-up">
+        <h2 class="section-title">一封情书</h2>
+        <p class="section-subtitle">写给你的，关于我所有的爱</p>
+        <div class="title-decoration"><span></span><i class="fas fa-heart"></i><span></span></div>
+      </div>
+
+      <div class="letter-wrapper" data-aos="zoom-in" data-aos-duration="1200">
+        <div class="envelope" id="envelope">
+          <div class="envelope-flap"></div>
+          <div class="envelope-body">
+            <div class="envelope-heart"><i class="fas fa-heart"></i></div>
+            <p class="envelope-text">点击打开</p>
+          </div>
+        </div>
+        <div class="letter-content" id="letter-content">
+          <div class="letter-paper">
+            <div class="letter-header">
+              <p class="letter-date">2026年2月14日</p>
+              <p class="letter-dear">亲爱的橙子：</p>
+            </div>
+            <div class="letter-body">
+              <p>当你看到这封信的时候，我们已经在一起153天了。</p>
+              <p>还记得2025年9月14日吗？那一天，我鼓起了所有的勇气，只为了能牵住你的手。从那天起，我的世界因为你而变得不同。</p>
+              <p>谢谢你出现在我的生命里。谢谢你的每一个微笑，每一次拥抱，每一句"我爱你"。你让我知道了什么是真正的幸福。</p>
+              <p>我喜欢看你演讲时自信的模样，喜欢你认真吃东西的表情，喜欢你撒娇时可爱的声音，喜欢你生气时噘嘴的样子......我喜欢关于你的一切。</p>
+              <p>每个月的14号，我都想送你一束花，因为你值得世间所有的美好。</p>
+              <p>未来的日子，我想和你一起走过无数个春夏秋冬。想和你看遍世界每一处风景，想和你尝遍每一道美食，想和你度过每一个清晨与黄昏。</p>
+              <p>今天是我们的第一个传统情人节，我想对你说：</p>
+              <p class="letter-highlight">我爱你，不止今天，不止明天，而是永远。</p>
+              <p class="letter-signature">——永远爱你的比乐熊</p>
+            </div>
+            <div class="letter-footer">
+              <div class="letter-seal"><i class="fas fa-heart"></i></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== PHOTO WALL SECTION ========== -->
+    <section id="photo-wall" class="section photo-wall-section">
+      <div class="section-header" data-aos="fade-up">
+        <h2 class="section-title">照片墙</h2>
+        <p class="section-subtitle">每一张照片，都是我们的珍贵回忆</p>
+        <div class="title-decoration"><span></span><i class="fas fa-heart"></i><span></span></div>
+      </div>
+
+      <div class="photo-wall-grid" id="photo-wall-grid">
+        <!-- Visible couple photos (first 6 shown) -->
+        <div class="photo-item">
+          <img src="photos/wall/couple-1.jpg" alt="合照" style="height: 320px;" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 400 400%22%3E%3Crect fill=%22%23f8e8ee%22 width=%22400%22 height=%22400%22/%3E%3Ctext x=%2250%25%22 y=%2250%25%22 text-anchor=%22middle%22 dy=%22.3em%22 fill=%22%23c44569%22 font-size=%2218%22%3E%E5%90%88%E7%85%A7 1%3C/text%3E%3C/svg%3E'">
+          <div class="photo-overlay">
+            <p class="photo-caption">我们的甜蜜时光</p>
+            <div class="photo-actions">
+              <button class="photo-action-btn" onclick="viewPhoto(this)" title="查看大图"><i class="fas fa-expand"></i></button>
+              <button class="photo-action-btn" onclick="downloadPhoto(this)" title="下载照片"><i class="fas fa-download"></i></button>
+            </div>
+          </div>
+        </div>
+
+        <div class="photo-item">
+          <img src="photos/wall/couple-2.jpg" alt="合照" style="height: 280px;" style="height: 240px;" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 400 400%22%3E%3Crect fill=%22%23f8e8ee%22 width=%22400%22 height=%22400%22/%3E%3Ctext x=%2250%25%22 y=%2250%25%22 text-anchor=%22middle%22 dy=%22.3em%22 fill=%22%23c44569%22 font-size=%2218%22%3E%E5%90%88%E7%85%A7 2%3C/text%3E%3C/svg%3E'">
+          <div class="photo-overlay">
+            <p class="photo-caption">有你真好</p>
+            <div class="photo-actions">
+              <button class="photo-action-btn" onclick="viewPhoto(this)" title="查看大图"><i class="fas fa-expand"></i></button>
+              <button class="photo-action-btn" onclick="downloadPhoto(this)" title="下载照片"><i class="fas fa-download"></i></button>
+            </div>
+          </div>
+        </div>
+
+        <div class="photo-item">
+          <img src="photos/wall/couple-3.jpg" alt="合照" style="height: 350px;" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 400 400%22%3E%3Crect fill=%22%23f8e8ee%22 width=%22400%22 height=%22400%22/%3E%3Ctext x=%2250%25%22 y=%2250%25%22 text-anchor=%22middle%22 dy=%22.3em%22 fill=%22%23c44569%22 font-size=%2218%22%3E%E5%90%88%E7%85%A7 3%3C/text%3E%3C/svg%3E'">
+          <div class="photo-overlay">
+            <p class="photo-caption">最美的回忆</p>
+            <div class="photo-actions">
+              <button class="photo-action-btn" onclick="viewPhoto(this)" title="查看大图"><i class="fas fa-expand"></i></button>
+              <button class="photo-action-btn" onclick="downloadPhoto(this)" title="下载照片"><i class="fas fa-download"></i></button>
+            </div>
+          </div>
+        </div>
+
+        <div class="photo-item">
+          <img src="photos/wall/couple-4.jpg" alt="合照" style="height: 220px;" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 400 400%22%3E%3Crect fill=%22%23f8e8ee%22 width=%22400%22 height=%22400%22/%3E%3Ctext x=%2250%25%22 y=%2250%25%22 text-anchor=%22middle%22 dy=%22.3em%22 fill=%22%23c44569%22 font-size=%2218%22%3E%E5%90%88%E7%85%A7 4%3C/text%3E%3C/svg%3E'">
+          <div class="photo-overlay">
+            <p class="photo-caption">在一起的每一刻</p>
+            <div class="photo-actions">
+              <button class="photo-action-btn" onclick="viewPhoto(this)" title="查看大图"><i class="fas fa-expand"></i></button>
+              <button class="photo-action-btn" onclick="downloadPhoto(this)" title="下载照片"><i class="fas fa-download"></i></button>
+            </div>
+          </div>
+        </div>
+
+        <div class="photo-item">
+          <img src="photos/wall/couple-5.jpg" alt="合照" style="height: 300px;" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 400 400%22%3E%3Crect fill=%22%23f8e8ee%22 width=%22400%22 height=%22400%22/%3E%3Ctext x=%2250%25%22 y=%2250%25%22 text-anchor=%22middle%22 dy=%22.3em%22 fill=%22%23c44569%22 font-size=%2218%22%3E%E5%90%88%E7%85%A7 5%3C/text%3E%3C/svg%3E'">
+          <div class="photo-overlay">
+            <p class="photo-caption">你的笑容最美</p>
+            <div class="photo-actions">
+              <button class="photo-action-btn" onclick="viewPhoto(this)" title="查看大图"><i class="fas fa-expand"></i></button>
+              <button class="photo-action-btn" onclick="downloadPhoto(this)" title="下载照片"><i class="fas fa-download"></i></button>
+            </div>
+          </div>
+        </div>
+
+        <div class="photo-item">
+          <img src="photos/wall/couple-6.jpg" alt="合照" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 400 400%22%3E%3Crect fill=%22%23f8e8ee%22 width=%22400%22 height=%22400%22/%3E%3Ctext x=%2250%25%22 y=%2250%25%22 text-anchor=%22middle%22 dy=%22.3em%22 fill=%22%23c44569%22 font-size=%2218%22%3E%E5%90%88%E7%85%A7 6%3C/text%3E%3C/svg%3E'">
+          <div class="photo-overlay">
+            <p class="photo-caption">爱你的每一天</p>
+            <div class="photo-actions">
+              <button class="photo-action-btn" onclick="viewPhoto(this)" title="查看大图"><i class="fas fa-expand"></i></button>
+              <button class="photo-action-btn" onclick="downloadPhoto(this)" title="下载照片"><i class="fas fa-download"></i></button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- More photos button -->
+      <div class="photo-wall-more">
+        <button class="more-photos-btn" id="more-photos-btn" onclick="openAllPhotosGallery()">
+          <i class="fas fa-images"></i>
+          <span>查看更多合照</span>
+          <i class="fas fa-chevron-right"></i>
+        </button>
+      </div>
+
+      <!-- Hidden extra photos for the full gallery modal -->
+      <div id="all-couple-photos" style="display:none">
+        <img src="photos/wall/couple-7.jpg" alt="合照7">
+        <img src="photos/wall/couple-8.jpg" alt="合照8">
+        <img src="photos/wall/couple-9.jpg" alt="合照9">
+        <img src="photos/wall/couple-10.jpg" alt="合照10">
+        <img src="photos/wall/couple-11.jpg" alt="合照11">
+        <img src="photos/wall/couple-12.jpg" alt="合照12">
+        <img src="photos/wall/couple-13.jpg" alt="合照13">
+        <img src="photos/wall/couple-14.jpg" alt="合照14">
+        <img src="photos/wall/couple-15.jpg" alt="合照15">
+        <img src="photos/wall/couple-16.jpg" alt="合照16">
+        <img src="photos/wall/couple-17.jpg" alt="合照17">
+        <img src="photos/wall/couple-18.jpg" alt="合照18">
+        <img src="photos/wall/couple-19.jpg" alt="合照19">
+        <img src="photos/wall/couple-20.jpg" alt="合照20">
+        <img src="photos/wall/couple-21.jpg" alt="合照21">
+        <img src="photos/wall/couple-22.jpg" alt="合照22">
+        <img src="photos/wall/couple-23.jpg" alt="合照23">
+        <img src="photos/wall/couple-24.jpg" alt="合照24">
+        <img src="photos/wall/couple-25.jpg" alt="合照25">
+        <img src="photos/wall/couple-26.jpg" alt="合照26">
+        <img src="photos/wall/couple-27.jpg" alt="合照27">
+        <img src="photos/wall/couple-28.jpg" alt="合照28">
+        <img src="photos/wall/couple-29.jpg" alt="合照29">
+        <img src="photos/wall/couple-30.jpg" alt="合照30">
+        <img src="photos/wall/couple-31.jpg" alt="合照31">
+        <img src="photos/wall/couple-32.jpg" alt="合照32">
+        <img src="photos/wall/couple-33.jpg" alt="合照33">
+        <img src="photos/wall/couple-34.jpg" alt="合照34">
+        <img src="photos/wall/couple-35.jpg" alt="合照35">
+        <img src="photos/wall/couple-36.jpg" alt="合照36">
+        <img src="photos/wall/couple-37.jpg" alt="合照37">
+        <img src="photos/wall/couple-38.jpg" alt="合照38">
+        <img src="photos/wall/couple-39.jpg" alt="合照39">
+        <img src="photos/wall/couple-40.jpg" alt="合照40">
+        <img src="photos/wall/couple-41.jpg" alt="合照41">
+        <img src="photos/wall/couple-42.jpg" alt="合照42">
+        <img src="photos/wall/couple-43.jpg" alt="合照43">
+        <img src="photos/wall/couple-44.jpg" alt="合照44">
+        <img src="photos/wall/couple-45.jpg" alt="合照45">
+      </div>
+    </section>
+
+    <!-- ========== WISHES SECTION ========== -->
+    <section id="wishes" class="section wishes-section">
+      <div class="section-header" data-aos="fade-up">
+        <h2 class="section-title">未来的愿望</h2>
+        <p class="section-subtitle">想和你一起做的事，多到数不清</p>
+        <div class="title-decoration"><span></span><i class="fas fa-heart"></i><span></span></div>
+      </div>
+
+      <div class="wishes-grid">
+        <div class="wish-card" data-aos="fade-up" data-aos-delay="50">
+          <div class="wish-icon"><i class="fas fa-plane"></i></div>
+          <h3>一起去旅行</h3>
+          <p>想和你去看巴黎的铁塔，东京的樱花，马尔代夫的海</p>
+        </div>
+        <div class="wish-card" data-aos="fade-up" data-aos-delay="100">
+          <div class="wish-icon"><i class="fas fa-home"></i></div>
+          <h3>有一个我们的家</h3>
+          <p>不需要多大，有你在就是最温暖的地方</p>
+        </div>
+        <div class="wish-card" data-aos="fade-up" data-aos-delay="150">
+          <div class="wish-icon"><i class="fas fa-dog"></i></div>
+          <h3>养一只小宠物</h3>
+          <p>一起照顾一个小生命，看它陪我们成长</p>
+        </div>
+        <div class="wish-card" data-aos="fade-up" data-aos-delay="200">
+          <div class="wish-icon"><i class="fas fa-mountain-sun"></i></div>
+          <h3>一起看日出日落</h3>
+          <p>在山顶等待第一缕阳光，然后告诉你"你比日出更美"</p>
+        </div>
+        <div class="wish-card" data-aos="fade-up" data-aos-delay="250">
+          <div class="wish-icon"><i class="fas fa-birthday-cake"></i></div>
+          <h3>过每一个生日</h3>
+          <p>每年给你一个惊喜，陪你吹蜡烛许愿</p>
+        </div>
+        <div class="wish-card" data-aos="fade-up" data-aos-delay="300">
+          <div class="wish-icon"><i class="fas fa-snowflake"></i></div>
+          <h3>一起看雪</h3>
+          <p>在雪地里牵着你的手，给你暖手，堆一个丑丑的雪人</p>
+        </div>
+        <div class="wish-card" data-aos="fade-up" data-aos-delay="350">
+          <div class="wish-icon"><i class="fas fa-utensils"></i></div>
+          <h3>学做一道你爱吃的菜</h3>
+          <p>从手忙脚乱到得心应手，只为看到你满足的笑容</p>
+        </div>
+        <div class="wish-card" data-aos="fade-up" data-aos-delay="400">
+          <div class="wish-icon"><i class="fas fa-infinity"></i></div>
+          <h3>和你一起变老</h3>
+          <p>头发白了，牙齿掉了，我还是觉得你最好看</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== MUSIC PLAYER SECTION ========== -->
+    <section id="music" class="section music-section">
+      <div class="section-header" data-aos="fade-up">
+        <h2 class="section-title">我们的歌</h2>
+        <p class="section-subtitle">每一首歌，都有我们的故事</p>
+        <div class="title-decoration"><span></span><i class="fas fa-heart"></i><span></span></div>
+      </div>
+      <div class="music-player" data-aos="zoom-in">
+        <div class="vinyl-record" id="vinyl-record">
+          <div class="vinyl-inner">
+            <!-- 📷 替换: 你们的合照作为唱片封面 -->
+            <img src="photos/couple-main.jpg" alt="唱片封面" class="vinyl-cover" onerror="this.style.display='none'">
+          </div>
+        </div>
+        <div class="music-info">
+          <h3 class="song-title" id="song-title">我们的专属歌曲</h3>
+          <p class="song-artist" id="song-artist">点击播放按钮</p>
+          <div class="music-controls">
+            <button class="music-btn" id="prev-btn"><i class="fas fa-backward"></i></button>
+            <button class="music-btn play-btn" id="play-btn"><i class="fas fa-play"></i></button>
+            <button class="music-btn" id="next-btn"><i class="fas fa-forward"></i></button>
+          </div>
+          <div class="music-progress">
+            <div class="progress-bar" id="progress-bar">
+              <div class="progress-fill" id="progress-fill"></div>
+            </div>
+          </div>
+          <p class="music-note">比乐熊想陪橙子一起做很多很多很多事</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== FOOTER ========== -->
+    <footer class="main-footer">
+      <div class="footer-hearts" id="footer-hearts"></div>
+      <div class="footer-content">
+        <div class="footer-heart-animation">
+          <div class="big-heart">
+            <i class="fas fa-heart"></i>
+          </div>
+        </div>
+        <p class="footer-text">我爱你</p>
+        <p class="footer-subtext">从2025.09.14开始，到永远</p>
+        <p class="footer-made">橙子天天开心！</p>
+      </div>
+      <button class="back-to-top" id="back-to-top" title="回到顶部">
+        <i class="fas fa-chevron-up"></i>
+      </button>
+    </footer>
+
+  </div><!-- end #main-site -->
+
+  <!-- ========== PHOTO GALLERY MODAL ========== -->
+  <div class="gallery-modal" id="gallery-modal">
+    <div class="gallery-modal-overlay"></div>
+    <div class="gallery-modal-content">
+      <button class="gallery-close" id="gallery-close"><i class="fas fa-times"></i></button>
+      <h3 class="gallery-title" id="gallery-title"></h3>
+      <div class="swiper gallery-swiper" id="gallery-swiper">
+        <div class="swiper-wrapper" id="gallery-slides">
+          <!-- Dynamic slides inserted by JS -->
+        </div>
+        <div class="swiper-pagination"></div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+      </div>
+      <div class="gallery-download-all">
+        <button class="download-all-btn" id="download-all-btn">
+          <i class="fas fa-download"></i> 下载全部照片
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========== LIGHTBOX FOR SINGLE PHOTO ========== -->
+  <div class="lightbox" id="lightbox">
+    <div class="lightbox-overlay"></div>
+    <div class="lightbox-content">
+      <button class="lightbox-close"><i class="fas fa-times"></i></button>
+      <img src="" alt="照片" id="lightbox-img">
+      <div class="lightbox-actions">
+        <button class="lightbox-download" id="lightbox-download">
+          <i class="fas fa-download"></i> 下载照片
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========== ALL PHOTOS GALLERY MODAL ========== -->
+  <div class="all-photos-modal" id="all-photos-modal">
+    <div class="all-photos-modal-bg" onclick="closeAllPhotosGallery()"></div>
+    <div class="all-photos-modal-content">
+      <div class="all-photos-modal-header">
+        <div>
+          <h2>我们的合照</h2>
+          <p>每一张照片，都是爱的证据</p>
+        </div>
+        <button class="all-photos-close" onclick="closeAllPhotosGallery()"><i class="fas fa-times"></i></button>
+      </div>
+      <div class="all-photos-grid" id="all-photos-grid">
+        <!-- Dynamically populated by JS -->
+      </div>
+    </div>
+  </div>
+
+  <!-- ========== CURSOR TRAIL ========== -->
+  <canvas id="cursor-canvas"></canvas>
+
+  <!-- ========== SCRIPTS ========== -->
+  <!-- GSAP -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <!-- Swiper -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <!-- AOS -->
+  <script src="lib/aos.js"></script>
+  <!-- Typed.js -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.1.0/typed.umd.js"></script>
+  <!-- Main Script -->
+  <script src="script.js"></script>
+</body>
+</html>
