@@ -467,7 +467,7 @@ document.addEventListener('DOMContentLoaded', function () {
       ]
     },
     birthday: {
-      title: '她的生日 - 2025.12.29',
+      title: '你的生日 - 2025.12.29',
       images: [
         'photos/timeline/birthday-1.jpg',
         'photos/timeline/birthday-2.jpg',
