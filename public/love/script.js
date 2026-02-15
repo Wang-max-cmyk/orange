@@ -469,9 +469,9 @@ document.addEventListener('DOMContentLoaded', function () {
     birthday: {
       title: '她的生日 - 2025.12.29',
       images: [
-        '/love/photos/timeline/birthday-1.jpg',
-        '/love/photos/timeline/birthday-2.jpg',
-        '/love/photos/timeline/birthday-3.jpg'
+        'photos/timeline/birthday-1.jpg',
+        'photos/timeline/birthday-2.jpg',
+        'photos/timeline/birthday-3.jpg'
       ]
     },
     jan: {
